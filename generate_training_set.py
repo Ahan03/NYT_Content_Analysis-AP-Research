@@ -24,9 +24,13 @@ import numpy as np  # numpy
 from concrete.util import CommunicationReader # to process the concretely annotated new york times files
 
 # NLTK imports
+#This makes the words we are comparing against usable
 import nltk
+#this separates sentences
 nltk.download('punkt')
+#eliminates widely used words (a, the, etc)
 nltk.download('stopwords')
+#conceptual relationships between words (synonyms or antonyms)
 nltk.download('wordnet')
 from nltk.corpus import stopwords 
 from nltk.stem.wordnet import WordNetLemmatizer
